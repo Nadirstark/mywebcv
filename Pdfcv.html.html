@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nadir Abdullaev
+    </title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>  
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="resume.html">Resume</a>
+      </nav>
+    </header>
+    <main>
+
+    <section id="home">
+      <h1>Nadir Abdullaev</h1>
+      <div class="social-icons">
+        <a href="https://github.com/nadirstark" target="_blank"><img src="github-icon.svg" alt="GitHub"></a>
+        <a href="https://www.linkedin.com/in/nadirstark" target="_blank"><img src="linkedin-icon.svg" alt="LinkedIn"></a>
+        <a href="mailto:nadirstark@icloud.com"><img src="email-icon.svg" alt="Email"></a>
+        <a href="https://www.facebook.com/nadirstark" target="_blank"><img src="facebook-icon.svg" alt="Facebook"></a>
+        <a href="https://www.instagram.com/nadirstark" target="_blank"><img src="instagram-icon.svg" alt="Instagram"></a>
+      </div>
+      <div class="about-me">
+        <p>Here is <a href="ссылка_на_ваше_резюме.pdf" target="_blank">a direct link to my resume</a>; I used <a href="https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs" target="_blank">this template</a> as the basis for my resume.</p>
+      </div>
+      <!-- Вставьте ссылку на ваш файл изображения или документа -->
+      <img src="CV+QA.svg" alt="Your Image">      
+    
+  </main>
+<script>
+  // JavaScript для выделения текущей страницы
+  const currentLocation = window.location.href;
+  const navLinks = document.querySelectorAll("nav a");
+
+  navLinks.forEach(link => {
+    if (link.href === currentLocation) {
+      link.classList.add("active");
+    }
+  });
+</script>
+<link rel="stylesheet" href="resume.css">
+
+</body>
+</html>
