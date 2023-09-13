@@ -1,0 +1,98 @@
+/* Общие стили */
+body {
+    font-family:'Roboto', sans-serif;  
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+  
+  /* Шапка */
+  header {
+    background-color: #fff;
+    color: black;
+    padding: 1em 0;
+    text-align: center;
+  }
+  
+  /* Ссылки в шапке */
+  nav a {
+    margin: 0px;
+    color: black;
+    font-size: 21px; /* Изменим размер шрифта на 21px */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    outline: none;
+}
+
+nav a:hover {
+    font-style: italic;
+
+}
+/* Добавляем стили для активной ссылки */
+nav a.active {
+    font-weight: bold;
+}
+
+
+
+  /* Главный контент */
+  main {
+    max-width: 1000px; /* Изменим на максимальную ширину контейнера */
+    margin: 0 auto; /* Центрируем контент */
+    text-align: left;
+    padding: 1em;
+    width: 100%;
+    flex: 1 0 auto;
+}
+  /* Шрифт и размер текста для имени "Nadir Abdullaev" */
+  h1 {
+    margin-top: 1px; 
+    margin-bottom: 1px;
+    text-align: center;
+    font-size: 4em;
+    font-weight: 100;
+    font-family:'Helvetica Neue', sans-serif;
+}
+  
+  /* О себе */
+  .about-me p {
+    line-height: 1.7;
+  }
+
+  /* Стили для иконок соцсетей */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 4px; 
+    margin-bottom: 4px;
+    
+  }
+  
+  .social-icons a {
+    margin: 5px;
+    margin-top: 1px; 
+    margin-bottom:  1px;
+  }
+  
+  .social-icons img {
+    width: 30px;
+    height: auto;
+  }
+
+  .profile-picture img {
+    width: 400px;  /* или любой другой размер */
+    margin: 40px auto;
+    display: block;
+    margin-top: 1%; 
+    margin-bottom: 1%;
+  }
+  
+  .additional-text {
+    text-align: center;
+    margin-top: 20px;
+  }
+    

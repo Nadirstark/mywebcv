@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nadir Abdullaev</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>  
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="resume.html">Resume</a>
+      </nav>
+    </header>
+    <main>
+
+    <section id="home">
+      <h1>Nadir Abdullaev</h1>
+      <div class="social-icons">
+        <a href="https://github.com/nadirstark" target="_blank"><img src="github-icon.svg" alt="GitHub"></a>
+        <a href="https://www.linkedin.com/in/nadirstark" target="_blank"><img src="linkedin-icon.svg" alt="LinkedIn"></a>
+        <a href="mailto:nadirstark@icloud.com"><img src="email-icon.svg" alt="Email"></a>
+        <a href="https://www.facebook.com/nadirstark" target="_blank"><img src="facebook-icon.svg" alt="Facebook"></a>
+        <a href="https://www.instagram.com/nadirstark" target="_blank"><img src="instagram-icon.svg" alt="Instagram"></a>
+      </div>
+      <div class="profile-picture">
+        <img src="your-picture.png" alt="Your profile picture">
+      </div>
+
+
+    <div class="about-me">
+      <p>Hi there,</p>
+      <p> My name is Nodirbek Abdullaev, but you can call me Nadir. I'm a Junior Software Testing Engineer, currently residing in Brooklyn but open to relocation. Adaptability is my middle name, you could say.
+        
+        In my free time, I'm an avid fan of scientific literature, films by Marvel and Nolan. I'm also a gastronome who loves to cook, particularly with a focus on Khorezmian cuisine, while also keeping it healthy for muscle gain. My musical tastes are diverse, leaning towards film soundtracks, indie-pop, and hip-hop.
+        
+        If you're looking to connect for career opportunities, education discussions, or just a casual chat, feel free to send me an email or connect with me on LinkedIn!
+        </p>
+      <!-- Здесь продолжите вставлять ваш текст -->
+    </div>
+  </section>
+
+  <section id="resume">
+    <!-- Замените эту строку на ваш резюме или ссылку на него -->
+  
+  </section>
+
+  <section id="things-i-love">
+    <!-- ... ваш код -->
+  </section>
+
+  <section id="coursework">
+    <!-- ... ваш код -->
+  </section>
+
+  <section id="projects">
+    <!-- ... ваш код -->
+  </section>
+</main>
+<script>
+  // JavaScript для выделения текущей страницы
+  const currentLocation = window.location.href;
+  const navLinks = document.querySelectorAll("nav a");
+
+  navLinks.forEach(link => {
+    if (link.href === currentLocation) {
+      link.classList.add("active");
+    }
+  });
+</script>
+<link rel="stylesheet" href="styles.css">
+</body>
+</html>
