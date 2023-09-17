@@ -120,5 +120,30 @@ h1 {
     height: auto;
   }
 }
+/* Медиа-запросы для адаптации под мобильные и планшеты */
+@media (max-width: 768px) {
+  /* Уменьшим размер шрифта в шапке для маленьких экранов */
+  nav a {
+    font-size: 18px;
+  }
 
+  /* Уменьшим размер текста о себе для маленьких экранов */
+  .about-me p {
+    font-size: 1.2em;
+  }
+
+  /* Уменьшим размер профильной фотографии для маленьких экранов */
+  .profile-picture img {
+    max-width: 300px;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body, header {
+    background-color: rgb(53, 53, 65);  /* Тёмно-серый фон */
+    color: white;
+  }
+  nav a {
+    color: white;  /* Инвертируем цвет текста ссылок */
+  }
+}
 
