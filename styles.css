@@ -148,3 +148,42 @@ h1 {
     height: auto;
   }
 }
+}
+/* Светлая тема по умолчанию */
+body {
+  background-color: white;
+  color: black;
+}
+
+/* Темная тема, если система пользователя предпочитает темную тему */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+    color: white;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body, header {
+    background-color: black;
+    color: white;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body, header {
+    background-color: black;
+    color: white;
+  }
+  nav a {
+    color: white;  /* Инвертируем цвет текста ссылок */
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body, header {
+    background-color: rgb(53, 53, 65);  /* Тёмно-серый фон */
+    color: white;
+  }
+  nav a {
+    color: white;  /* Инвертируем цвет текста ссылок */
+  }
+}
