@@ -26,12 +26,11 @@
         <p>Here is <a href="Nadirs_resume.pdf" target="_blank">a direct link to my resume</a>; I used <a href="https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs" target="_blank">this template</a> as the basis for my resume.</p>
       </div>
       <!-- Вставьте ссылку на ваш файл изображения или документа -->
-      <object data="nadirs_resume.pdf" type="application/pdf" width="100%" height="600px">
-        <p>It appears you don't have a PDF plugin for this browser. No biggie... you can <a href="nadirs_resume.pdf">click here to download the PDF file.</a></p>
-      </object>
-    </main>  
-    
+      <iframe src="https://mozilla.github.io/pdf.js/web/viewer.html?file=nadirs_resume.pdf" width="100%" height="600">
+      <p>It appears you don't have a PDF plugin for this browser. No biggie... you can <a href="nadirs_resume.pdf">click here to download the PDF file.</a></p>
+    </iframe>
   </main>
+
 <script>
   // JavaScript для выделения текущей страницы
   const currentLocation = window.location.href;
