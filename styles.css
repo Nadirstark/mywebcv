@@ -136,3 +136,15 @@ h1 {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  embed {
+    height: auto;
+    min-height: 100vh;
+  }
+}
+@media only screen and (max-width: 768px) {
+  embed {
+    width: 100%;
+    height: auto;
+  }
+}
