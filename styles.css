@@ -109,3 +109,30 @@ h1 {
       max-width: 300px;
   }
 }
+
+/* Планшеты */
+@media (min-width: 769px) and (max-width: 1024px) {
+  nav a {
+    font-size: 20px;
+  }
+  .about-me p {
+    font-size: 1.5em;
+  }
+  .profile-picture img {
+    max-width: 350px;
+  }
+}
+
+/* Мобильные устройства */
+@media (max-width: 768px) {
+  nav a {
+    font-size: 18px;
+  }
+  .about-me p {
+    font-size: 1.2em;
+  }
+  .profile-picture img {
+    max-width: 300px;
+  }
+}
+
