@@ -108,5 +108,11 @@ h1 {
   color: rgb(34, 166, 243);
 }
 
+@media only screen and (max-width: 768px) {
+  embed {
+    height: auto;
+    min-height: 100vh;
+  }
+}
 
 
