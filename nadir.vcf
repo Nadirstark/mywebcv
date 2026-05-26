@@ -1,0 +1,10 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Abdullaev;Nadir;;;
+FN:Nadir Abdullaev
+TEL;TYPE=CELL,VOICE:+13473668292
+EMAIL;TYPE=INTERNET:nadirstark@icloud.com
+URL:https://nadirstark.com
+ADR;TYPE=HOME:;;Brooklyn;NY;;;USA
+PHOTO;VALUE=URL;TYPE=JPEG:https://nadirstark.com/your-picture.JPG
+END:VCARD
