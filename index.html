@@ -13,7 +13,8 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://www.nadirstark.com/your-picture.JPG">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌑</text></svg>">
-  <link rel="stylesheet" href="styles.css?v=11">
+  <link rel="stylesheet" href="styles.css?v=12">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
 </head>
 <body>
   <nav class="nav">
@@ -28,6 +29,25 @@
       <img src="your-picture.JPG" alt="Nadir" class="avatar">
       <h1 class="name">Nadir Abdullaev</h1>
       <p class="location">Brooklyn, New York</p>
+    </section>
+
+    <section class="now">
+      <div class="now-item">
+        <span class="now-label">📍 Now</span>
+        <span class="now-value">Brooklyn, New York</span>
+      </div>
+      <div class="now-item">
+        <span class="now-label">💼 Work</span>
+        <span class="now-value">Finance & side projects</span>
+      </div>
+      <div class="now-item">
+        <span class="now-label">📖 Reading</span>
+        <span class="now-value">Thinking, Fast and Slow</span>
+      </div>
+      <div class="now-item">
+        <span class="now-label">🎵 Listening</span>
+        <span class="now-value">Late night playlists</span>
+      </div>
     </section>
 
     <section class="socials">
@@ -75,5 +95,39 @@
       <p>©️ 2026 Nadir Abdullaev</p>
     </footer>
   </main>
+  <script>
+    // Tilt effect on avatar
+    VanillaTilt.init(document.querySelector(".avatar"), {
+      max: 15,
+      speed: 400,
+      glare: true,
+      "max-glare": 0.2,
+      scale: 1.05
+    });
+
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(el => {
+        if (el.isIntersecting) {
+          el.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.about p, .now, .now-item, .socials, .save-contact, .raikhan-cta').forEach(el => {
+      el.classList.add('reveal');
+      observer.observe(el);
+    });
+
+    // Cursor glow
+    const glow = document.createElement('div');
+    glow.className = 'cursor-glow';
+    document.body.appendChild(glow);
+
+    document.addEventListener('mousemove', e => {
+      glow.style.left = e.clientX + 'px';
+      glow.style.top = e.clientY + 'px';
+    });
+  </script>
 </body>
 </html>
